@@ -19,7 +19,15 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="data-gathering.html">Data Gathering</a></li>
-                <li><a href="#" class="btn-nav">Usability Results</a></li>
+                <li><a href="result.html" class="active">Usability Results</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">More <span class="arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.figma.com/proto/FG9qHcYy27o61T2VfAMQnV/ScholarTrack?node-id=0-1&t=N1DaaV0FdOlTrIfe-1" target="_blank">Prototype Walkthrough</a></li>
+                        <li><a href="https://drive.google.com/file/d/1tWlYVgvXdmqd462toPuXaXAi_uIlvdwm/view?usp=sharing" target="_blank">Video Demonstration</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>  
     </nav>
@@ -52,8 +60,46 @@
                 </div>
             </div>
 
+            <div class="findings-box" style="margin-top: 64px;">
+                <h2>Key Issues Identified</h2>
+                <div class="recommendation-list" style="margin-top: 24px;">
+                    <li>
+                        <strong>01</strong>
+                        <span><strong>High Technical Dependency:</strong> Participants recorded a high average score (3.8/5.0) regarding the need for technical support, indicating the interface is not yet "walk-up-and-use" ready.</span>
+                    </li>
+                    <li>
+                        <strong>02</strong>
+                        <span><strong>Performance &amp; Responsiveness:</strong> Qualitative feedback highlighted "delays when loading pages," which negatively impacts the perceived efficiency of the system.</span>
+                    </li>
+                    <li>
+                        <strong>03</strong>
+                        <span><strong>Complex Onboarding:</strong> Users felt they needed to learn many things before becoming proficient (3.7/5.0), suggesting that features are not intuitively placed.</span>
+                    </li>
+                    <li>
+                        <strong>04</strong>
+                        <span><strong>Lack of Data Persistence:</strong> A critical missing feature identified by users was the Auto-save function, leading to fears of data loss during long sessions.</span>
+                    </li>
+                    <li>
+                        <strong>05</strong>
+                        <span><strong>Interface Inconsistency:</strong> A score of 3.35/5.0 for inconsistency suggests that UI elements (buttons, forms, navigation) may behave differently across various pages.</span>
+                    </li>
+                </div>
+            </div>
+
             <div class="findings-box">
-                <h2>Key Recommendations</h2>
+                <h2>Discussion of Findings</h2>
+                <div class="discussion-paragraph-wrap">
+                    <p>
+                        The results reveal a "Usability Gap." Users expressed a high intent to use the system frequently <strong>(4.25/5.0)</strong> and praised its ability to make scholarship tracking "simple and organized." This indicates that the <strong>functional value</strong> of ScholarTrack is high.
+                    </p>
+                    <p>
+                        However, the SUS score was dragged down by the complexity and learning curve. The feedback suggests that the system is currently "expert-oriented"—meaning it works well once someone explains it, but it fails to guide a new user through the process independently. The demand for "mobile-friendliness" and "clearer notifications" indicates that students expect a modern, snappy experience similar to the social media apps they use daily.
+                    </p>
+                </div>
+            </div>
+
+            <div class="findings-box">
+                <h2>Recommendations for improving the prototype</h2>
                 <div class="recommendation-list">
                     <li>
                         <strong>01</strong>
@@ -73,7 +119,91 @@
                     </li>
                 </div>
             </div>
-        </div>
+
+            <div class="report-block">
+                <h2>Suggested Design Improvements</h2>
+                
+                <div class="improvements-grid">
+                    <div class="improvement-card">
+                        <h4>Tooltip Integration</h4>
+                        <p>Add small "i" icons next to scholarship requirements that show detailed descriptions on hover.</p>
+                    </div>
+                    <div class="improvement-card">
+                        <h4>Status Progress Bars</h4>
+                        <p>Instead of simple text status, use a visual progress bar (e.g., <em>Submitted &gt; Under Review &gt; Approved</em>) to give users immediate visual feedback.</p>
+                    </div>
+                    <div class="improvement-card">
+                        <h4>Responsive Grid System</h4>
+                        <p>Re-adjust the Figma prototype to include a mobile-view layout, ensuring that all buttons are "thumb-friendly" and text is legible on smaller screens.</p>
+                    </div>
+                    <div class="improvement-card">
+                        <h4>Centralized Notification Center</h4>
+                        <p>Replace static updates with a dedicated notification bell icon that alerts users to status changes or new scholarship deadlines.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="report-block">
+                <h2>Heuristic Evaluation Workbooks</h2>
+                <p class="block-subtext">Access the complete usability evaluation workbooks verified and completed by our project group evaluators:</p>
+                
+                <div class="improvements-grid">
+                    <div class="improvement-card evaluator-card">
+                        <div class="evaluator-info">
+                            <h4>Workbook Evaluation 01</h4>
+                            <p class="evaluator-label">Evaluator</p>
+                            <span class="evaluator-name">Kim A. Artista</span>
+                        </div>
+                        <div class="evaluator-actions">
+                            <a href="https://drive.google.com/file/d/1WPP4xQjOqjt5nwAQ1ZlQNuoL9hbMqlAc/view?usp=sharing" target="_blank" class="btn-evaluator btn-view">View Document</a>
+                        </div>
+                    </div>
+
+                    <div class="improvement-card evaluator-card">
+                        <div class="evaluator-info">
+                            <h4>Workbook Evaluation 02</h4>
+                            <p class="evaluator-label">Evaluator</p>
+                            <span class="evaluator-name">John Alexis B. Busilig</span>
+                        </div>
+                        <div class="evaluator-actions">
+                            <a href="https://drive.google.com/file/d/18PLzlqOdFbhRORuzmmXNxFrdvYH5Arg1/view?usp=sharing" target="_blank" class="btn-evaluator btn-view">View Document</a>
+                        </div>
+                    </div>
+
+                    <div class="improvement-card evaluator-card">
+                        <div class="evaluator-info">
+                            <h4>Workbook Evaluation 03</h4>
+                            <p class="evaluator-label">Evaluator</p>
+                            <span class="evaluator-name">John Rien P. Cadiz</span>
+                        </div>
+                        <div class="evaluator-actions">
+                            <a href="https://drive.google.com/file/d/1EM8VV1Tb8c8lVw8pivyIB_IzVt_HbZd2/view?usp=sharing" target="_blank" class="btn-evaluator btn-view">View Document</a>
+                        </div>
+                    </div>
+
+                    <div class="improvement-card evaluator-card">
+                        <div class="evaluator-info">
+                            <h4>Workbook Evaluation 04</h4>
+                            <p class="evaluator-label">Evaluator</p>
+                            <span class="evaluator-name">Jhon Mico V. Frondozo</span>
+                        </div>
+                        <div class="evaluator-actions">
+                            <a href="https://drive.google.com/file/d/148xD69WvKdIMZbt8P6UnRBuWtlVxdxeB/view?usp=sharing" target="_blank" class="btn-evaluator btn-view">View Document</a>
+                        </div>
+                    </div>
+
+                    <div class="improvement-card evaluator-card">
+                        <div class="evaluator-info">
+                            <h4>Workbook Evaluation 05</h4>
+                            <p class="evaluator-label">Evaluator</p>
+                            <span class="evaluator-name">Mark Angelo P. Pasiona</span>
+                        </div>
+                        <div class="evaluator-actions">
+                            <a href="https://drive.google.com/file/d/1EBB2KJvHe848gFXuLTDpiY9-GJ4rD_yy/view?usp=sharing" target="_blank" class="btn-evaluator btn-view">View Document</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
 
     <footer>
